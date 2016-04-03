@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestModeActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/id_background"
+        android:src="@drawable/base_final"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="245dp"
+        android:layout_height="245dp"
+        android:id="@+id/id_circle_speed"
+        android:src="@drawable/circle_arrow"
+        android:rotation="-2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="202dp"
+        android:layout_height="100dp"
+        android:id="@+id/id_front_arrow"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/front_inactive"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"  />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="113dp"
+        android:id="@+id/id_left_arrow"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/left_inactive"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignTop="@+id/id_front_arrow"
+        android:layout_toEndOf="@+id/id_front_arrow" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="106dp"
+        android:id="@+id/id_right_arrow"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/right_inactive"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="108dp"
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/id_front_arrow"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/id_battery_level"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/b_0"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="9dp" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_chronometer"
+        android:textColor="#fff"
+        android:textSize="38sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textColor="#ffc814"
+        android:textSize="20sp"
+        android:id="@+id/id_text_start_stop"
+        android:layout_below="@+id/id_chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lorem ipsum"
+        android:textColor="#ffc814"
+        android:textSize="20sp"
+        android:id="@+id/id_bottom_text"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 cm"
+        android:textColor="#ffc814"
+        android:textSize="15sp"
+        android:id="@+id/id_distance_text"
+        android:layout_above="@+id/id_chronometer"
+        android:layout_marginBottom="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATTERY"
+        android:textColor="#304661"
+        android:textSize="14sp"
+        android:id="@+id/id_battery_text"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--<SeekBar-->
+        <!--android:id="@+id/seekBar1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:progressDrawable="@drawable/styled_progress"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:thumb="@drawable/slider_triangle"-->
+        <!--android:indeterminate="false"-->
+        <!--android:layout_below="@+id/left_arrow_inactive"-->
+        <!--android:layout_toEndOf="@+id/front_arrow_inactive"-->
+        <!--android:layout_marginStart="35dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:rotation="270" />-->
+
+    <!--<ro.cipry.xplorers.widget.DemoSeek.AbsVerticalSeekBar
+        android:id="@+id/v_four_university"
+        android:layout_width="10dp"
+        android:layout_height="250dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:longClickable="false"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_vertical"
+        android:saveEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Xplorers</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_bt">Connect to device!</string>
+    <string name="race_mode">Auto Mode</string>
+    <string name="close_bt">Disconnect from device!</string>
+    <string name="finish_app">Exit!</string>
+    <string name="test_mode">Test Mode</string>
+    <string name="controlled_mode">Controlled Mode</string>
+</resources>

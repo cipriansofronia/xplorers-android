@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TestModeActivity">
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/autonomous_mode"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/race_mode"
+        />
+    <item
+        android:id="@+id/controlled_mode"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/controlled_mode"
+        />
+    <item
+        android:id="@+id/deleteHistory"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Delete history!"
+        />
+    <item
+        android:id="@+id/connect_bt"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/open_bt"
+        />
+    <item
+        android:id="@+id/disconnect_bt"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/close_bt"
+        />
+    <item
+        android:id="@+id/finish_app"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/finish_app"
+        />
+
+</menu>

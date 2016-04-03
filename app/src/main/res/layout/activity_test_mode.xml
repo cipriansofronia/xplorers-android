@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestModeActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/id_background"
+        android:src="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/id_battery_level"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/b_0"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATTERY"
+        android:textColor="#304661"
+        android:textSize="14sp"
+        android:id="@+id/id_battery_text"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/idImageR1"
+        android:src="@drawable/back_button_pressed"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/idImageL1"
+        android:layout_alignEnd="@+id/idDetailsText" />
+
+    <TextView
+        android:id="@+id/idDetailsText"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:lines="11"
+        android:background="@drawable/border_text"
+        android:text=""
+        android:scrollbars = "vertical"
+        android:textColor="#ffc814"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="4dp"
+         />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/idImageR2"
+        android:src="@drawable/up_button_pressed"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/idImageR1"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/idImageR1" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/idImageL1"
+        android:src="@drawable/back_button_pressed"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/idImageL2"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/idImageL2" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/idImageL2"
+        android:src="@drawable/up_button_pressed"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/idImageStop"
+        android:layout_alignStart="@+id/idDetailsText" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/idImageStop"
+        android:src="@drawable/stop"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignBottom="@+id/id_battery_level"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/idConnectedImg"
+        android:src="@drawable/off"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/id_battery_level"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnected!"
+        android:textColor="#ffc814"
+        android:textSize="14sp"
+        android:id="@+id/idConnectedText"
+        android:layout_below="@+id/idConnectedImg"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/idPlusLeft"
+        android:src="@drawable/plus"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/idImageL2" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/idMinusLeft"
+        android:src="@drawable/minus"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/idPlusLeft"
+        android:layout_alignEnd="@+id/idImageL1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/idPlusRight"
+        android:src="@drawable/plus"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@+id/idPlusLeft"
+        android:layout_alignStart="@+id/idImageR2" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/idMinusRight"
+        android:src="@drawable/minus"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/idPlusRight"
+        android:layout_alignEnd="@+id/idImageR1" />
+
+
+</RelativeLayout>
