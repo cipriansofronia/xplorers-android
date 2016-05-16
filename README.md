@@ -2,7 +2,7 @@
 Android App Xplorers Team
 https://www.facebook.com/xplorersteamsuceava
 
-Easy to use UI to control a remote car via Bluetooth using accerometer.<br>
+Easy to use UI to control a remote car via Bluetooth using accelerometer.<br>
 Developed for [Electromobility Competition 2015](http://www.electromobility.ace.tuiasi.ro/)
 <br>
 
